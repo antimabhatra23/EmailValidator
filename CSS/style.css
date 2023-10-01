@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Alkatra:wght@500&family=Josefin+Sans&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #1c1c50;
+  padding: 19px 12px;
+}
+
+.logo {
+  color: white;
+  margin: 0px 12px;
+}
+
+.logo img {
+  width: 18px;
+  filter: invert(1);
+}
+
+ul {
+  display: flex;
+}
+
+ul li {
+  list-style: none;
+  padding: 0px 15px;
+}
+
+ul li a {
+  text-decoration: none;
+  color: white;
+  transition: 0.5s ease-in;
+  font-size: 19px;
+}
+
+ul li a:hover {
+  color: rgb(165, 197, 189);
+}
+
+main {
+  min-height: 85vh;
+  padding: 2px;
+  background: rgb(226, 211, 243);;
+}
+.container {
+  max-width: 80vw;
+  margin: auto;
+  padding: 9px 15px;
+}
+.container h1 {
+  padding: 12px 0px;
+  text-align: center;
+}
+form {
+    text-align: center;
+}
+.container h2 {
+    text-align: center;
+}
+input[type="text"] {
+  min-width: 244px;
+  padding: 4px 12px;
+  border: 2px solid #1c1c50;
+  font-size: 17px;
+}
+.btn {
+  background-color: #1c1c50;
+  color: white;
+  border: 2px solid #1c1c50;
+  width: 100px;
+  height: 30px;
+  font-size: 17px;
+  cursor: pointer;
+}
+#resultCont div::first-letter {
+  text-transform: uppercase;
+}
+#resultCont {
+    text-align: center;
+}
+
+footer {
+  background-color: #1c1c50;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  padding: 12px;
+}
+
+@media only screen and (max-width: 600px) {
+  nav {
+    flex-direction: column;
+  }
+
+  .container {
+    font-size: 12px;
+  }
+  input[type="text"] {
+    width: 100%;
+  }
+  .logo {
+    padding: 6px 0px;
+    font-size: 12px;
+  }
+
+  .logo span {
+    font-size: 20px;
+  }
+
+  .logo img {
+    width: 15px;
+    filter: invert(1);
+  }
+}
