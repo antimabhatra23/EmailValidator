@@ -1,0 +1,13 @@
+git config --global user.name "Antima Bhatra"
+git config --global user.email "antimabhatra82@gmail.com"
+touch .gitignore
+git init
+git add .
+git commit -m "Initial commit"
+git status # Jsut to see
+ssh-keygen -t rsa -b 4096 -C "antima@antimabhatra82.com"
+tail <path to id_ed25519.pub> # Add this key to your GitHub Account
+cat /c/Users/USER/.ssh/id_ed25519.pub
+git remote add origin <ssh url.git>
+git push origin master
+
